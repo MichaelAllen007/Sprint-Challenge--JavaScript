@@ -89,7 +89,7 @@ The resulting contact information strings should have a space between the first 
 Log the result of your new array. */
 const contactInfo = [];
 for (let i = 0; i < graduates.length; i++) {
-  contactInfo.push(graduates[i].first_time + " " + graduates[i].email)
+  contactInfo.push(graduates[i].first_name + " " + graduates[i].email)
 }
 console.log(contactInfo);
 
@@ -137,10 +137,11 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = [];
-zooAnimals.map(function(names) {
+const lowCaseAnimalNames = [
+  zooAnimals.map(function(names) {
   return names.animal_name.toLowerCase();
 })
+];
 
 console.log(lowCaseAnimalNames);
 
